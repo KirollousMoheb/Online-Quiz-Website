@@ -1,0 +1,223 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////remove browser css and other things/////////////////////////////////////////////////////////////////*/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////ANIMATION/////////////////////////////////////////////////////////////////*/
+
+#loader {
+	width:200px;
+height:200px;
+animation: spin 2s infinite linear;
+}
+#loaderdiv{
+	padding-top: 20px;
+align-items: center;
+justify-content: center;
+display: flex;
+height: 100%;
+margin-top: 20%;
+
+}
+
+@-webkit-keyframes spin {
+	from{
+	transform:rotate(0deg)
+	}
+	to{
+	transform:rotate(359deg);
+	}
+	}
+
+
+@keyframes spin {
+	from{
+	transform:rotate(0deg)
+	}
+	to{
+	transform:rotate(359deg);
+	}
+	}
+
+
+
+#maindiv {
+  display: none;
+  text-align: center;
+}
+.fan{
+
+width:40px;
+height:40px;
+animation: rotation 2.5s infinite linear;
+
+}
+@keyframes rotation {
+from{
+transform:rotate(0deg)
+}
+to{
+transform:rotate(359deg);
+}
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////NAVBAR////////////////////////////////////////////////////////*/
+
+
+.nav-link{
+color: white !important;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 25px;
+}
+.nav-link:hover{
+color:#ae0709!important;
+border-bottom: 1px solid white;
+transition-duration: 0.7s;
+transition-timing-function: ease-in-out;
+}
+.navbar-toggler{
+background-color:transparent;
+}
+.navbar-toggler button{
+color: red ;
+}
+nav{
+background-color: #0b0b0b;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////test////////////////////////////////////////////////////////*/
+.answer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.answer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.answer:hover input ~ .checkmark {
+  background-color: #fff;
+	transition: background 0.2s;
+}
+
+/* When the checkbox is checked, add a blue background */
+.answer input:checked ~ .checkmark {
+  background-color: rgba(0,0,0,0.7);
+	transition: background 0.5s;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.answer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.answer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.form-group{
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 13px;
+	border: 2px solid white;
+	border-radius: 8px;
+	font-family: 'Signika Negative', sans-serif;
+color: white;
+padding-bottom: 20px;
+}
+.container{
+	padding-top: 70px;
+	height: 1700px;
+	border-radius: 25px;
+	/* border: 8px solid rgba(0,0,0,0.6); */
+	background-color: #5f0b0b;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+}
+#pst{
+	background: linear-gradient(to bottom, #333333 10%, #5f0b0b 80%, #8b1313 90%);
+	height: 1900px;
+	padding-top: 50px;
+}
+header{
+	padding-bottom: 30px;
+}
+
+#send{
+	padding-left: 15%;
+	padding-right: 15% ;
+	color: white;
+ border-color: white;
+ background-color:rgba(0,0,0,0.8);
+ box-shadow: 5px 5px 3px 3px rgba(0,0,0,0.6);
+
+
+}
+#send:hover{
+	background-color: transparent;
+	transition: ease-in-out 0.5s;
+
+}
+.scorebox{
+	font-size: 25px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
